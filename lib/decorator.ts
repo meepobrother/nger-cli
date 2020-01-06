@@ -5,10 +5,6 @@ export interface CommandOptions {
     name: string;
     alias?: string;
     desc?: string;
-    opts?: {
-        noHelp?: boolean;
-        isDefault?: boolean;
-    };
 }
 export const Command = createClassDecorator<CommandOptions>(CommandMetadataKey, it => {
     const options = it.options;
@@ -45,4 +41,3 @@ export const Option = createPropertyDecorator<OptionOptions>(OptionMetadataKey, 
 export const ActionMetadataKey = `ActionMetadataKey`;
 export interface ActionOptions { }
 export const Action = createMethodDecorator<ActionOptions>(ActionMetadataKey);
-

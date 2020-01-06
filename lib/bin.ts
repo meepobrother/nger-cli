@@ -5,8 +5,7 @@ import { Module } from '@nger/core'
 @Command({
     name: 'test',
     desc: `测试1`,
-    alias: 't1',
-    opts: {}
+    alias: 't1'
 })
 export class TestCommand {
     @Option({
@@ -23,8 +22,7 @@ export class TestCommand {
 @Command({
     name: 'test2',
     desc: `测试2`,
-    alias: `t2`,
-    opts: {}
+    alias: `t2`
 })
 export class Test2Command {
     @Option({
