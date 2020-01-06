@@ -10,9 +10,16 @@ export interface CommandOptions {
         isDefault?: boolean;
     };
 }
-export const Command = createClassDecorator<CommandOptions>(CommandMetadataKey, (target: any) => {
-    return {
-        name: target.name
+export const Command = createClassDecorator<CommandOptions>(CommandMetadataKey, it => {
+    const options = it.options;
+    if (options) {
+        it.options = {
+            ...options
+        }
+    } else {
+        it.options = {
+            name: it.type.name
+        }
     }
 });
 
@@ -20,21 +27,22 @@ export const OptionMetadataKey = `OptionsMetadataKey`;
 export interface OptionOptions {
     alias: string;
     description?: string;
-    defaultValue?: any;
 }
-export const Option = createPropertyDecorator<OptionOptions>(OptionMetadataKey);
+export const Option = createPropertyDecorator<OptionOptions>(OptionMetadataKey, it => {
+    const options = it.options;
+    if (options) {
+        it.options = {
+            ...options
+        }
+    }
+    else {
+        it.options = {
+            alias: it.property as string
+        }
+    }
+});
 
 export const ActionMetadataKey = `ActionMetadataKey`;
 export interface ActionOptions { }
 export const Action = createMethodDecorator<ActionOptions>(ActionMetadataKey);
 
-export const InputMetadataKey = `InputMetadataKey`
-export interface InputOptions {
-    name: string;
-}
-
-export const Input = createPropertyDecorator<InputOptions>(InputMetadataKey, (target: Type<any>, instance: any, property: TypeProperty, propertyType: any) => {
-    return {
-        name: property as string
-    }
-});

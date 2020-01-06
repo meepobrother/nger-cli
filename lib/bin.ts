@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import { Command, Option, createPlatform, Action } from './index';
-import { Input } from './decorator';
-
+import { Command, Option, Action } from './index';
+import { platformCli } from './platform_new';
+import { Module } from '@nger/core'
 @Command({
     name: 'test',
     desc: `测试1`,
@@ -14,8 +14,6 @@ export class TestCommand {
     })
     test: string;
 
-    @Input()
-    demo: string;
     @Action()
     do() {
         console.log(`hello test: ${this.test}`)
@@ -34,12 +32,17 @@ export class Test2Command {
     })
     test: string;
 
-    @Input()
-    demo: string;
     @Action()
     do() {
         console.log(`hello test2: ${this.test}`)
     }
 }
 
-createPlatform([TestCommand, Test2Command]).run()
+@Module({
+    controllers: [
+        TestCommand,
+        Test2Command
+    ]
+})
+export class AppModule { }
+platformCli().bootstrapModule(AppModule)

@@ -1,2 +1,2 @@
 export * from './decorator';
-export * from './platform';
+export * from './platform_new';
