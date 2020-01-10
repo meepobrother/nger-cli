@@ -1,29 +1,26 @@
 {
-    "compilerOptions": {
-        "target": "esnext",
-        "module": "commonjs",
-        "declaration": true,
-        "downlevelIteration": true,
-        "strict": true,
-        "strictPropertyInitialization": false,
-        "moduleResolution": "node",
-        "baseUrl": "./",
-        "paths": {
-            "@nger/decorator": [
-                "packages/decorator/lib/index.ts"
-            ],
-            "@nger/cli": [
-                "packages/cli/lib/index.ts"
-            ],
-            "@nger/plain-proto": [
-                "packages/plain-proto/lib/index.ts"
-            ]
-        },
-        "esModuleInterop": true,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "declaration": true,
+    "downlevelIteration": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@nger/decorator": ["packages/decorator/lib/index.ts"],
+      "@nger/cli": ["packages/cli/lib/index.ts"],
+      "@nger/cli.exception": ["packages/exception/lib/index.ts"],
+      "@nger/cli.utils": ["packages/utils/lib/index.ts"],
+      "@nger/cli.virtual-fs": ["packages/virtual-fs/lib/index.ts"],
+      "@nger/cli.json": ["packages/json/lib/index.ts"],
+      "@nger/cli.workspace": ["packages/workspace/lib/index.ts"],
+      "@nger/cli.logger": ["packages/logger/lib/index.ts"]
     },
-    "include": [
-        "lib"
-    ]
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["lib"]
 }

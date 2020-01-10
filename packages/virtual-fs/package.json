@@ -1,0 +1,30 @@
+{
+  "name": "@nger/cli.virtual-fs",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "imeepos <admin@meepo.com.cn>",
+  "homepage": "https://github.com/meepobrother/nger3/tree/master/packages/virtual-fs#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meepobrother/nger-cli.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/meepobrother/nger-cli/issues"
+  }
+}
