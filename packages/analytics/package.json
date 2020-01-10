@@ -1,6 +1,6 @@
 {
   "name": "@nger/cli.analytics",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "imeepos <admin@meepo.com.cn>",
   "homepage": "https://github.com/meepobrother/nger3/tree/master/packages/analytics#readme",
@@ -26,5 +26,9 @@
   },
   "bugs": {
     "url": "https://github.com/meepobrother/nger-cli/issues"
+  },
+  "dependencies": {
+    "@nger/cli.json": "^0.0.1",
+    "@nger/cli.logger": "^0.0.2"
   }
 }

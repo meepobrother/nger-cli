@@ -16,7 +16,9 @@
       "@nger/cli.virtual-fs": ["packages/virtual-fs/lib/index.ts"],
       "@nger/cli.json": ["packages/json/lib/index.ts"],
       "@nger/cli.workspace": ["packages/workspace/lib/index.ts"],
-      "@nger/cli.logger": ["packages/logger/lib/index.ts"]
+      "@nger/cli.logger": ["packages/logger/lib/index.ts"],
+      "@nger/cli.experimental": ["packages/experimental/lib/index.ts"],
+      "@nger/cli.terminal": ["packages/terminal/lib/index.ts"]
     },
     "esModuleInterop": true,
     "experimentalDecorators": true,

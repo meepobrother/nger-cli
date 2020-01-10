@@ -1,7 +1,6 @@
 import { map } from 'rxjs/operators';
 import { Logger } from './logger';
 
-
 /**
  * Keep an map of indentation => array of indentations based on the level.
  * This is to optimize calculating the prefix based on the indentation itself. Since most logs
@@ -10,7 +9,6 @@ import { Logger } from './logger';
  * is expensive; this alleviates it.
  */
 const indentationMap: {[indentationType: string]: string[]} = {};
-
 
 export class IndentLogger extends Logger {
   constructor(name: string, parent: Logger | null = null, indentation = '  ') {

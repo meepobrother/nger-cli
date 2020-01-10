@@ -1,6 +1,6 @@
 {
   "name": "@nger/cli.experimental",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> TODO: description",
   "author": "imeepos <admin@meepo.com.cn>",
   "homepage": "https://github.com/meepobrother/nger3/tree/master/packages/experimental#readme",
@@ -28,7 +28,13 @@
     "url": "https://github.com/meepobrother/nger-cli/issues"
   },
   "dependencies": {
+    "@nger/cli.exception": "^0.0.2",
+    "@nger/cli.json": "^0.0.1",
+    "@nger/cli.logger": "^0.0.2",
+    "@nger/cli.utils": "^0.0.2",
+    "@nger/cli.virtual-fs": "^0.0.1",
     "@types/fast-json-stable-stringify": "^2.0.0",
-    "fast-json-stable-stringify": "^2.1.0"
+    "fast-json-stable-stringify": "^2.1.0",
+    "rxjs": "^6.5.4"
   }
 }

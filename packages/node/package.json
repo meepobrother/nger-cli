@@ -1,9 +1,9 @@
 {
-  "name": "@nger/cli.exception",
+  "name": "@nger/cli.node",
   "version": "0.0.2",
   "description": "> TODO: description",
   "author": "imeepos <admin@meepo.com.cn>",
-  "homepage": "https://github.com/meepobrother/nger3/tree/master/packages/exception#readme",
+  "homepage": "https://github.com/meepobrother/nger3/tree/master/packages/node#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -26,5 +26,14 @@
   },
   "bugs": {
     "url": "https://github.com/meepobrother/nger-cli/issues"
+  },
+  "dependencies": {
+    "@nger/cli.exception": "^0.0.2",
+    "@nger/cli.experimental": "^0.0.2",
+    "@nger/cli.json": "^0.0.1",
+    "@nger/cli.logger": "^0.0.1",
+    "@nger/cli.terminal": "^0.0.2",
+    "@nger/cli.virtual-fs": "^0.0.1",
+    "rxjs": "^6.5.4"
   }
 }

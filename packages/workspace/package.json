@@ -15,7 +15,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://10.0.0.202:9008"
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,8 @@
     "url": "https://github.com/meepobrother/nger-cli/issues"
   },
   "dependencies": {
+    "@nger/cli.json": "^0.0.1",
+    "@nger/cli.virtual-fs": "^0.0.1",
     "@types/fast-json-stable-stringify": "^2.0.0",
     "fast-json-stable-stringify": "^2.1.0",
     "magic-string": "^0.25.6"

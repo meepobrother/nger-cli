@@ -2,15 +2,78 @@
 # yarn lockfile v1
 
 
+"@nger/cli.exception@^0.0.2":
+  version "0.0.2"
+  resolved "http://10.0.0.202:9008/@nger%2fcli.exception/-/cli.exception-0.0.2.tgz#b98821ba1763e30719ba10b96770150bb524a22d"
+  integrity sha512-g1zpWb9+FmN0CibdGSqBk0a5EPLOvK/cM/gis03lxo/i9c8e/uo4QoNHo0dEIDahW6Gms6w/ahABLJf85cpzkQ==
+
+"@nger/cli.json@^0.0.1":
+  version "0.0.1"
+  resolved "http://10.0.0.202:9008/@nger%2fcli.json/-/cli.json-0.0.1.tgz#a1651b6ed2f852016d2e15d50a1c6a240aa4edc9"
+  integrity sha512-alkFV+etmjvpZD8Up+GBX2axhcpNZPti+BCs9zDoBGYcsXVvwpoEqFg6A7dRiznyH/OwIkxgdS72Gz6HzR2L/w==
+  dependencies:
+    "@types/ajv" "^1.0.0"
+    ajv "^6.10.2"
+
+"@nger/cli.utils@^0.0.2":
+  version "0.0.2"
+  resolved "http://10.0.0.202:9008/@nger%2fcli.utils/-/cli.utils-0.0.2.tgz#a9a87a73dc07b8d477840cda27d217769f9b7db1"
+  integrity sha512-pd3Cd087lJzne8f1QDAhV34JcwVs2UzJz4D02lmed7MDWwlxEM+J0xF4pwzlM2h1yEoVfw/9Y2Bn8Qvr5eElwg==
+  dependencies:
+    "@types/source-map" "^0.5.7"
+    source-map "^0.7.3"
+
+"@nger/cli.virtual-fs@^0.0.1":
+  version "0.0.1"
+  resolved "http://10.0.0.202:9008/@nger%2fcli.virtual-fs/-/cli.virtual-fs-0.0.1.tgz#7df451d98d446830357113fde270ef9851407138"
+  integrity sha512-MMDG7uRxF5Jj3NUu+sJx7ZaUZ+K0B3GlD6BAFTWAqhUvHwjSN78CYeX6tJla0eQYGioBT1vVzUCliFNDoh0z/w==
+  dependencies:
+    "@nger/cli.exception" "^0.0.2"
+    "@nger/cli.utils" "^0.0.2"
+
+"@types/ajv@^1.0.0":
+  version "1.0.0"
+  resolved "http://10.0.0.202:9008/@types%2fajv/-/ajv-1.0.0.tgz#4fb2440742f2f6c30e7fb0797b839fc6f696682a"
+  integrity sha1-T7JEB0Ly9sMOf7B5e4OfxvaWaCo=
+  dependencies:
+    ajv "*"
+
 "@types/fast-json-stable-stringify@^2.0.0":
   version "2.0.0"
   resolved "http://10.0.0.202:9008/@types%2ffast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz#40363bb847cb86b2c2e1599f1398d11e8329c921"
   integrity sha1-QDY7uEfLhrLC4VmfE5jRHoMpySE=
 
-fast-json-stable-stringify@^2.1.0:
+"@types/source-map@^0.5.7":
+  version "0.5.7"
+  resolved "http://10.0.0.202:9008/@types%2fsource-map/-/source-map-0.5.7.tgz#165eeb583c1ef00196fe4ef4da5d7832b03b275b"
+  integrity sha1-Fl7rWDwe8AGW/k702l14MrA7J1s=
+  dependencies:
+    source-map "*"
+
+ajv@*, ajv@^6.10.2:
+  version "6.10.2"
+  resolved "http://10.0.0.202:9008/ajv/-/ajv-6.10.2.tgz#d3cea04d6b017b2894ad69040fec8b623eb4bd52"
+  integrity sha1-086gTWsBeyiUrWkED+yLYj60vVI=
+  dependencies:
+    fast-deep-equal "^2.0.1"
+    fast-json-stable-stringify "^2.0.0"
+    json-schema-traverse "^0.4.1"
+    uri-js "^4.2.2"
+
+fast-deep-equal@^2.0.1:
+  version "2.0.1"
+  resolved "http://10.0.0.202:9008/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz#7b05218ddf9667bf7f370bf7fdb2cb15fdd0aa49"
+  integrity sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
+
+fast-json-stable-stringify@^2.0.0, fast-json-stable-stringify@^2.1.0:
   version "2.1.0"
   resolved "http://10.0.0.202:9008/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
   integrity sha1-h0v2nG9ATCtdmcSBNBOZ/VWJJjM=
+
+json-schema-traverse@^0.4.1:
+  version "0.4.1"
+  resolved "http://10.0.0.202:9008/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
+  integrity sha1-afaofZUTq4u4/mO9sJecRI5oRmA=
 
 magic-string@^0.25.6:
   version "0.25.6"
@@ -19,7 +82,24 @@ magic-string@^0.25.6:
   dependencies:
     sourcemap-codec "^1.4.4"
 
+punycode@^2.1.0:
+  version "2.1.1"
+  resolved "http://10.0.0.202:9008/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
+  integrity sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
+
+source-map@*, source-map@^0.7.3:
+  version "0.7.3"
+  resolved "http://10.0.0.202:9008/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
+  integrity sha1-UwL4FpAxc1ImVECS5kmB91F1A4M=
+
 sourcemap-codec@^1.4.4:
   version "1.4.7"
   resolved "http://10.0.0.202:9008/sourcemap-codec/-/sourcemap-codec-1.4.7.tgz#5b2cd184e3fe51fd30ba049f7f62bf499b4f73ae"
   integrity sha1-WyzRhOP+Uf0wugSff2K/SZtPc64=
+
+uri-js@^4.2.2:
+  version "4.2.2"
+  resolved "http://10.0.0.202:9008/uri-js/-/uri-js-4.2.2.tgz#94c540e1ff772956e2299507c010aea6c8838eb0"
+  integrity sha1-lMVA4f93KVbiKZUHwBCupsiDjrA=
+  dependencies:
+    punycode "^2.1.0"
